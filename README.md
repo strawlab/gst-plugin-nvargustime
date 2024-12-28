@@ -9,7 +9,7 @@ See [this](https://devtalk.nvidia.com/default/topic/1056918/jetson-tx2/nvargusca
 Build and run like this:
 
     cargo build --release
-    export GST_PLUGIN_PATH=`pwd`/../target/release
+    export GST_PLUGIN_PATH=`pwd`/target/release
 
     # to show timestamps on the Jetson Nano:
 
@@ -29,9 +29,9 @@ See also [this](https://developer.ridgerun.com/wiki/index.php?title=NVIDIA_Jetso
 
 ## Observations
 
-* The PTS is locked to the timestamp saved by `nvarguscamerasrc` offset by a
-fixed amount.
-* The timestamp saved by `nvarguscamerasrc` is in units of CLOCK_MONOTONIC
+- The PTS is locked to the timestamp saved by `nvarguscamerasrc` offset by a
+  fixed amount.
+- The timestamp saved by `nvarguscamerasrc` is in units of CLOCK_MONOTONIC
 
 ## License
 
